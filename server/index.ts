@@ -124,7 +124,7 @@ app.use(
 					process.env.SENTRY_DSN ? '*.ingest.sentry.io' : null,
 					"'self'",
 				].filter(Boolean),
-				'font-src': ["'self'"],
+				'font-src': ["'self'", 'data:'],
 				'frame-src': ["'self'"],
 				'img-src': ["'self'", 'data:'],
 				'script-src': [
