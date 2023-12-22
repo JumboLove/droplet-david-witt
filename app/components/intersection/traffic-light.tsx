@@ -12,7 +12,7 @@ export function TrafficLight({
 		<div className="flex flex-col gap-2 bg-slate-500 p-2">
 			<div
 				className={cn('aspect-square w-4 rounded-full bg-red-500', {
-					'opacity-50': state.color !== 'r',
+					'opacity-30': state.color !== 'r',
 				})}
 			>
 				<span className="sr-only">
@@ -20,24 +20,18 @@ export function TrafficLight({
 				</span>
 			</div>
 			<div
-				className={cn(
-					'aspect-square w-4 rounded-full bg-yellow-500 opacity-50',
-					{
-						'opacity-50': state.color !== 'y',
-					},
-				)}
+				className={cn('aspect-square w-4 rounded-full bg-yellow-500', {
+					'opacity-30': state.color !== 'y',
+				})}
 			>
 				<span className="sr-only">
 					Yellow light{state.color === 'y' ? ' active' : ''}
 				</span>
 			</div>
 			<div
-				className={cn(
-					'aspect-square w-4 rounded-full bg-green-500 opacity-50',
-					{
-						'opacity-50': state.color !== 'g',
-					},
-				)}
+				className={cn('aspect-square w-4 rounded-full bg-green-500', {
+					'opacity-30': state.color !== 'g',
+				})}
 			>
 				<span className="sr-only">
 					Green light{state.color === 'g' ? ' active' : ''}
@@ -46,12 +40,9 @@ export function TrafficLight({
 
 			{isLeftTurnLight && (
 				<div
-					className={cn(
-						'aspect-square w-4 rounded-full bg-orange-500 opacity-50',
-						{
-							'opacity-50': state.color !== 'o',
-						},
-					)}
+					className={cn('aspect-square w-4 rounded-full bg-orange-500', {
+						'opacity-30': state.color !== 'o',
+					})}
 				>
 					<span className="sr-only">
 						Orange light{state.color === 'o' ? ' active' : ''}
