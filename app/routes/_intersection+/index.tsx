@@ -329,13 +329,13 @@ export default function Index() {
 		<main className="container relative min-h-screen">
 			<ToDoList />
 
-			<div className="outline outline-blue-300">
+			<div className="my-4 border-b border-gray-200 py-4">
 				<Button onClick={toggleSimulation}>
 					{simulationStatus === 'playing' ? '⏸︎' : '▶'}
 				</Button>
 			</div>
 
-			<div className="aspect-square w-[800px] max-w-full  outline outline-red-300 ">
+			<div className="aspect-square w-[800px] max-w-full  ">
 				<div className="grid h-full grid-cols-3 grid-rows-3">
 					<div className="col-start-2 row-start-1">
 						<TrafficRoad
