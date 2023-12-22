@@ -45,6 +45,8 @@ export function TrafficRoad({
 
 function Lane({ cars, position }: { cars: number; position: number }) {
 	let label = ''
+	const displayCars = Math.min(cars, 4)
+	const remainingCount = cars - 4
 
 	switch (position) {
 		case 0:
@@ -64,7 +66,8 @@ function Lane({ cars, position }: { cars: number; position: number }) {
 			<div className="absolute inset-0 -top-6 text-center font-semibold text-primary/30">
 				{label}
 			</div>
-			<div>{cars}</div>
+			<div>{'🚗'.repeat(displayCars)}</div>
+			{remainingCount > 0 && <div>+{remainingCount}</div>}
 		</div>
 	)
 }
