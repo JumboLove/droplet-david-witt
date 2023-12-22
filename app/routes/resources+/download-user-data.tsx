@@ -48,7 +48,7 @@ export async function loader({ request }: DataFunctionArgs) {
 				? {
 						...user.image,
 						url: `${domain}/resources/user-images/${user.image.id}`,
-				  }
+					}
 				: null,
 			notes: user.notes.map(note => ({
 				...note,

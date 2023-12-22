@@ -86,3 +86,6 @@ Ragrets:
 - When spawning cars into a lane with a green light, it never shows. This is an
   unfortunate result of using simple number values rather that mimicing a car
   queuing in an intersection.
+
+- Not setting up a data object for "in intersection". It might have helped with
+  the visual display of cars moving through the light
